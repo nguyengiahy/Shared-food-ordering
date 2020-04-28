@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500,600,700|Roboto');
+
+body{
+    background:rgb(224, 123, 57);
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+
+h1{
+    margin: auto;
+    width: 50%;
+    padding:10px;
+    text-align: center;
+
+}
+
+p{
+    margin:auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation bar */
+.Container{
+    /* background-color:rgb(179, 98, 45); */
+    background-color:rgb(212, 86, 4);
+    display:flex;
+    flex-wrap: wrap;
+    padding:20px;
+    justify-content:center;
+}
+
+.nav_items a{
+    text-decoration:none;
+    margin:20px;
+    color:white;
+    
+}
+
+.nav_items a:hover{
+    background-color:rgb(224, 123, 57);
+    padding:10px;
+    transition-duration:0.5s;
+}
+
+/* Grid configuration will be subject to change */
+.column{
+ /* Remember margins are from top, right, bottom and left */
+ float:left;
+ width: 33.33%;
+ padding: 115px;
+ text-align: center;
+ font-size:25px;
+ cursor:pointer;
+ color: white;
+
+}
+
+.containerTab{
+    padding: 20px;
+    color: white;
+
+}
+
+.expanding-grid:after{
+    
+    content: "";
+    display:table;
+    clear: both;
+
+}
+
+.closebtn{
+    
+    float:right;
+    color:white;
+    font-size:35px;
+    cursor:pointer;
+
+}

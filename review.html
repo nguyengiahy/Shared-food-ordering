@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel = "stylesheet" href="styles/review.css"/>
+    <script src=""></script>
+</head>
+<body>
+    <h1>Review Page</h1>
+    <header>
+        <!-- <p><a href="index.html"><img src="styles/image/logo.jpg" alt="Logo" class="Image"/></a></p> -->
+      <div class="Container">
+          <div id = "Logo" class="nav_items"><a href="index.html"><img src="styles/image/logo.jpg" alt="Logo" class="Image"/></a></div>
+          <div class="nav_items"><a href="order.html">Order</a></div>
+          <div class="nav_items" ><a href="login.html">Login</a></div>
+          <div class="nav_items"><a href="review.html">Reviews</a></div>
+          <div class="nav_items"><a href="about.html">About</a></div>
+          <div class="nav_items"><a href="help.html">Help</a></div>
+      </div>
+    </header>
+    <h1>Welcome to the Review page</h1>
+    <p>This page will contain a number of reviews about the restaurant and their food</p>
+    <!--Expanding grid -->
+    <div class="expanding-grid">
+        <!-- <ul class ="links">
+            <li><a href="#review1">Review 1</a></li>
+            <li><a href="#review2">Review 2</a></li>
+            <li><a href="#review3">Review 3</a></li>
+            <li><a href="#review4">Review 4</a></li>
+        </ul> -->
+        <div class="column" onclick="openTab('review1');" style="background:green;">Review 1</div>
+        <div class="column" onclick="openTab('review2');" style="background:blue;">Review 2</div>
+        <div class="column" onclick="openTab('review3');" style="background:red;">Review 3</div>
+        <div class="column" onclick="openTab('review4');" style="background:salmon;">Review 4</div>
+    </div>
+
+    <div id="review1" class="containerTab" style="display:none;background:green">
+        <span onclick ="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Review 1</h2>
+        <p>Lorem ipsum</p>
+    </div>
+    
+    <div id="review2" class="containerTab" style="display:none;background:blue">
+        <span onclick ="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Review 1</h2>
+        <p>Lorem ipsum</p>
+    </div>
+    
+    <div id="review3" class="containerTab" style="display:none;background:red">
+        <span onclick ="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Review 1</h2>
+        <p>Lorem ipsum</p>
+    </div>
+    <div id="review4" class="containerTab" style="display:none;background:salmon">
+        <span onclick ="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Review 1</h2>
+        <p>Lorem ipsum</p>
+    </div>
+
+
+</body>
+</html>

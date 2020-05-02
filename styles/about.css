@@ -9,14 +9,16 @@ body{
     text-align: center;
 
 }
-
+/* Secondary menu items for displaying content */
 .Container2 {
+
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     justify-content: center;
 }
 
+/* The styles of links */
 .about_items a{
     font-size: larger;
     text-decoration: none;
@@ -41,6 +43,7 @@ body{
 }
 
 .nav_items a{
+    
     text-decoration:none;
     margin:20px;
     color:white;

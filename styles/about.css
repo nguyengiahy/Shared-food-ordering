@@ -31,6 +31,10 @@ body{
     transition-duration:0.5s;
 }
 
+.content{
+    display:none;
+    padding: 12px;
+}
 
 /* Navigation bar */
 .Container{

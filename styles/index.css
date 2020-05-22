@@ -17,17 +17,28 @@ body {
     clear: both;
 }
 
-header {
-    background-color: #121924;
-    min-height: 80px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+/* HEADER  */
+#header {
+    background-color: #e8500e;
+    color: white;
 }
 
-.header-content {
-    width: 80%;
-    margin: auto;
+.header-left i {
+    margin-right: 4px;
+}
+
+.header-right i {
+    font-size: 14px;
+    padding: 8px 10px;
+    background-color: #121924;
+    margin-left: 5px;
+    border: 1px solid transparent;
+}
+
+.header-right i:hover {
+    background-color: #e8500e;
+    border: 1px solid white;
+    transition: all 0.5s;
 }
 
 .header-logo h1 {
@@ -41,41 +52,46 @@ header {
     color: #e8500e;
 }
 
-.header-logo,
 nav {
-    float: left;
-    width: 40%;
+    background-color: #121924;
+
 }
 
-nav {
-    width: 60%;
-    text-align: right;
+.navbar-nav--menu {
+    margin-top: 5px;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    line-height: 80px;
+.navbar-nav--menu .nav-item .nav-link {
+    font-weight: 500;
+    color: white;
+    transition: all 0.5s;
 }
 
-nav ul li {
-    display: inline;
+.nav-item_line {
+    width: 0%;
+    height: 2px;
+    background-color: #e8500e;
+    transition: all 0.5s;
+}
+
+.navbar-nav--menu .nav-item:hover>.nav-link {
+    color: #e8500e !important;
+}
+
+.navbar-nav--menu .nav-item:hover>.nav-item_line {
+    width: 100%;
+}
+
+.navbar-nav--menu .nav-item {
     margin-left: 30px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1rem;
+.navbar-nav--menu .active .nav-link {
+    color: #e8500e !important;
 }
 
-nav ul li a:hover {
-    color: #e8500e;
-    font-weight: 700;
-}
-
-nav ul li.active a {
-    color: #e8500e;
+.navbar-nav--menu .active .nav-item_line {
+    width: 100%;
 }
 
 

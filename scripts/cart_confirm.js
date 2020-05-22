@@ -9,13 +9,15 @@ function cartConfirm() {
     Price.textContent = 10;
     Price.value = 10;
     Quantity.value = 2;
-    total.textContent = calcTotal();
+    total.textContent = calcTotal(Price.value, Quantity.value);
+    alert(calcTotal());
 
 }
 
-function checkQuantity() {
+function checkProduct() {
     // quantities =  sessionStorage.Quantity;
     const confirm = document.querySelector("#cart-confirm");
+
     quantities = 5;
     for (let index = 0; index < quantities; index++) {
         confirm.innerHTML += `<tr>
@@ -36,7 +38,7 @@ function calcTotal(price, quantities) {
 }
 
 function init() {
-    checkQuantity();
+    checkProduct();
     cartConfirm();
 }
 window.onload = init;

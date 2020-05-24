@@ -7,28 +7,67 @@
     <title>Swin Food</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/40ee252bb3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- HEADER  -->
-    <header>
-        <div class="header-content">
-            <div class="header-logo">
-                <h1><span>Swin</span>Food</h1>
+    <header id="header" class="py-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left header-left">
+                    <i class="fa fa-phone"></i>
+                    <span class="mr-3">0423824295</span>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>something@gmail.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-right mt-1 mt-md-0 header-right">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+
             </div>
-            <nav>
-                <ul>
-                    <li class="active"><a href="">HOME</a></li>
-                    <li><a href="">ORDER</a></li>
-                    <li><a href="">REVIEWS</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">LOGIN</a></li>
-                </ul>
-            </nav>
-            <div class="clear"></div>
         </div>
     </header>
+    <!-- NAVBAR  -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+        <div class="container">
+            <a href="index.html" class="header-logo navbar-brand">
+                <h1 class="m-0"><span>Swin</span>Food</h1>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myMenu">
+                <ul class="navbar-nav navbar-nav--menu ml-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">HOME</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">ORDER</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">REVIEW</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">ABOUT</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">LOGIN</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <!-- CAROUSEL  -->
     <!-- CAROUSEL  -->
     <section class="carousel">
         <article class="carousel-content">
@@ -113,6 +152,15 @@
     <footer>
         <p>Swin Food, Copyright@2020</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
 </body>
 

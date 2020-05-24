@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500,600,700|Roboto');
 
 body{
-    background:rgb(224, 123, 57);
+    background:#0062ad;
     font-family: 'Roboto', sans-serif;
     color:white;
 }
@@ -48,15 +48,26 @@ p{
 .column{
  /* Remember margins are from top, right, bottom and left */
  float:left;
- width: 33.33%;
- padding: 115px;
+ width: auto;
+ padding: 100px;
  text-align: center;
  font-size:25px;
  cursor:pointer;
  color: white;
 
 }
+/* Adding spacing between each box */
+/* #R1{
+    margin-right: 40px;
+} */
 
+
+.column > img{
+    float:left;
+    width:25%;
+    padding: 5px;
+    
+}
 .containerTab{
     padding: 20px;
     color: white;

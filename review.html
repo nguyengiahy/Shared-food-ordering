@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Page</title>
-    <link rel = "stylesheet" href="styles/review.css"/>
+    <link rel="stylesheet" href="styles/review.css" />
     <script src="scripts/review.js"></script>
 </head>
+
 <body>
     <h1>Review Page</h1>
     <header>
         <!-- <p><a href="index.html"><img src="styles/image/logo.jpg" alt="Logo" class="Image"/></a></p> -->
-      <div class="Container">
-          <div id = "Logo" class="nav_items"><a href="index.html"><img src="styles/image/logo.jpg" alt="Logo" class="Image"/></a></div>
-          <div class="nav_items"><a href="order.html">Order</a></div>
-          <div class="nav_items" ><a href="login.html">Login</a></div>
-          <div class="nav_items"><a href="review.html">Reviews</a></div>
-          <div class="nav_items"><a href="about.html">About</a></div>
-          <div class="nav_items"><a href="help.html">Help</a></div>
-      </div>
+        <div class="Container">
+            <div id="Logo" class="nav_items"><a href="index.html"><img src="styles/image/logo.jpg" alt="Logo"
+                        class="Image" /></a></div>
+            <div class="nav_items"><a href="order.html">Order</a></div>
+            <div class="nav_items"><a href="login.html">Login</a></div>
+            <div class="nav_items"><a href="review.html">Reviews</a></div>
+            <div class="nav_items"><a href="about.html">About</a></div>
+            <div class="nav_items"><a href="help.html">Help</a></div>
+        </div>
     </header>
-    <h1>Welcome to the Review page</h1>
-    <p>This page will contain a number of reviews about the restaurant and their food</p>
+    <h1>See why our customers love using SwinFood</h1>
+    <p>
+        At SwinFood we strive ourselves to be provide the quality of service that you expect in an online food service.
+        We are connected to a number of food stores that provide you with just what you need. This allows us to provide
+        high quality of service
+        that you would expect. If you don't believe us hear from our satisfied customers!
+    </p>
     <!--Expanding grid -->
     <div class="expanding-grid">
         <!-- <ul class ="links">
@@ -30,35 +38,49 @@
             <li><a href="#review3">Review 3</a></li>
             <li><a href="#review4">Review 4</a></li>
         </ul> -->
-        <div class="column" onclick="openTab('review1');" style="background:green;">Review 1</div>
-        <div class="column" onclick="openTab('review2');" style="background:blue;">Review 2</div>
-        <div class="column" onclick="openTab('review3');" style="background:red;">Review 3</div>
-        <div class="column" onclick="openTab('review4');" style="background:salmon;">Review 4</div>
+        <div class="column" id="R1" onclick="openTab('review1');"><img src="images/showcase.jpg" alt="Burger"
+                style="width: 100%;"></div>
+        <div class="column" id="R2" onclick="openTab('review2');"><img src="images/highlight-1.jpg" alt="Meal"
+                style="width: 100%;"></div>
+        <div class="column" id="R3" onclick="openTab('review3');"><img src="images/highlight-2.jpg" alt="Meal"
+                style="width: 100%;"></div>
+        <div class="column" id="R4" onclick="openTab('review4');"><img src="images/highlight-3.jpg" alt="Meal"
+                style="width: 100%;"></div>
     </div>
 
     <div id="review1" class="containerTab" style="display:none;background:green">
-        <span onclick ="this.parentElement.style.display='none'" class="closebtn">x</span>
-        <h2>Review 1</h2>
-        <p>Lorem ipsum</p>
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Burger and chips review</h2>
+        <p>
+            As an experienced buyer, that has dealt with online food services I found this to provide the most options
+            for food delivery and pick up. The food was of adequete standard and their UI needs some work but just for the number of options
+            I would recommend SwinFood.
+        </p>
     </div>
-    
+
     <div id="review2" class="containerTab" style="display:none;background:blue">
-        <span onclick ="this.parentElement.style.display='none'" class="closebtn">x</span>
-        <h2>Review 1</h2>
-        <p>Lorem ipsum</p>
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Cambodian Curry (Laksa) </h2>
+        <p>
+            I've been trying to look at new restaurants in my area and SwinFood has provided a way of discovering restaurants in my area.
+            They provide a quality of service that is better than other places and some really good food. Would recommend.
+        </p>
     </div>
-    
+
     <div id="review3" class="containerTab" style="display:none;background:red">
-        <span onclick ="this.parentElement.style.display='none'" class="closebtn">x</span>
-        <h2>Review 1</h2>
-        <p>Lorem ipsum</p>
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Breakfast meal</h2>
+        <p>Eh the breakfast meal was ok, wasn't really sure about the taste but service was fine. I am sort of on the fence with recommending the service</p>
     </div>
     <div id="review4" class="containerTab" style="display:none;background:salmon">
-        <span onclick ="this.parentElement.style.display='none'" class="closebtn">x</span>
-        <h2>Review 1</h2>
-        <p>Lorem ipsum</p>
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <h2>Giant Burger</h2>
+        <p>I've always seen this massive burger and since restaurants aren't really open during Covid-19. 
+            SwinFood has allowed me to experience this massive burger. Would higly recommend!
+        </p>
     </div>
 
 
 </body>
+
 </html>

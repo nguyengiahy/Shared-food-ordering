@@ -6,24 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/40ee252bb3.js" crossorigin="anonymous"></script>
     <script src="scripts/about.js"></script>
 </head>
 
 <body>
-    <!-- Navigation menu -->
-    <header>
-        <!-- <p><a href="index.html"><img src="styles/image/logo.jpg" alt="Logo" class="Image"/></a></p> -->
-        <div class="Container">
-            <div id="Logo" class="nav_items"><a href="index.html"><img src="styles/image/logo.jpg" alt="Logo"
-                        class="Image" /></a></div>
-            <div class="nav_items"><a href="order.html">Order</a></div>
-            <div class="nav_items"><a href="login.html">Login</a></div>
-            <div class="nav_items"><a href="review.html">Reviews</a></div>
-            <div class="nav_items"><a href="about.html">About</a></div>
-            <div class="nav_items"><a href="help.html">Help</a></div>
+    <!-- HEADER  -->
+    <header id="header" class="py-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left header-left">
+                    <i class="fa fa-phone"></i>
+                    <span class="mr-3">0423824295</span>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>something@gmail.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-right mt-1 mt-md-0 header-right">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+
+            </div>
         </div>
     </header>
-    <!-- Contains stuff about the website> -->
+    <!-- NAVBAR  -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+        <div class="container">
+            <a href="index.html" class="header-logo navbar-brand">
+                <h1 class="m-0"><span>Swin</span>Food</h1>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myMenu">
+                <ul class="navbar-nav navbar-nav--menu ml-auto">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link">HOME</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="order1.html" class="nav-link">ORDER</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="review.html" class="nav-link">REVIEW</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="about.html" class="nav-link">ABOUT</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="login.html" class="nav-link">LOGIN</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
     <p>
         Lorem ipsum dolor sit
         amet consectetur adipisicing elit.
@@ -38,11 +83,11 @@
     <!-- Contains submenu -->
 
     <div class="Container2">
-        
+
         <div class="about_items"><a href="#about1" class="links" onclick="openContent(event, 'About')">About</a></div>
         <div class="about_items"><a href="#about2" class="links" onclick="openContent(event, 'FAQ')">FAQ</a></div>
 
-        
+
         <!-- <div class="about_items"><button class="links" onclick="openContent(check,)">About</button></div> -->
 
     </div>
@@ -57,10 +102,10 @@
             officiis eligendi odio repellendus
             accusantium perspiciatis ab atque,
             perferendis necessitatibus quaerat?
-    
+
         </p>
     </div>
-    
+
     <div id="FAQ" class="content">
         <h3>FAQ</h3>
         <p>
@@ -71,10 +116,24 @@
             officiis eligendi odio repellendus
             accusantium perspiciatis ab atque,
             perferendis necessitatibus quaerat?
-    
+
         </p>
     </div>
-
+    <!-- FOOTER  -->
+    <footer>
+        <p>Swin Food, Copyright@2020</p>
+    </footer>
+    <!-- FOOTER  -->
+    <script src="../Shared-food-ordering/scripts/nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

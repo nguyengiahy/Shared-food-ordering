@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/index.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/40ee252bb3.js" crossorigin="anonymous"></script>
+	<title>Order</title>
+</head>
+
+<body>
+	<!-- NAVBAR  -->
+	<nav class="navbar sticky-top navbar-expand-md navbar-dark">
+		<div class="container">
+			<a href="index.html" class="header-logo navbar-brand">
+				<h1 class="m-0"><span>Swin</span>Food</h1>
+			</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="myMenu">
+				<ul class="navbar-nav navbar-nav--menu ml-auto">
+					<li class="nav-item active">
+						<a href="#" class="nav-link">HOME</a>
+						<div class="nav-item_line"></div>
+					</li>
+					<li class="nav-item ">
+						<a href="#" class="nav-link">ORDER</a>
+						<div class="nav-item_line"></div>
+					</li>
+					<li class="nav-item ">
+						<a href="#" class="nav-link">REVIEW</a>
+						<div class="nav-item_line"></div>
+					</li>
+					<li class="nav-item ">
+						<a href="#" class="nav-link">ABOUT</a>
+						<div class="nav-item_line"></div>
+					</li>
+					<li class="nav-item ">
+						<a href="#" class="nav-link">LOGIN</a>
+						<div class="nav-item_line"></div>
+					</li>
+			</div>
+		</div>
+	</nav>
+	<!-- END OF NAV  -->
+
+	<!-- PERSONAL DETAILS FORM  -->
+	<div class="container my-5">
+		<form novalidate action="cart.html" id="order-form">
+			<div class="form-group">
+				<label class="text-primary" for="Name">Name</label>
+				<div class="row">
+					<div class="col">
+						<input type="text" id="input-Fname" class="form-control" placeholder="First name">
+					</div>
+					<div class="col">
+						<input type="text" id="input-Lname" class="form-control" placeholder="Last name">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="text-primary" for="Address">Address</label>
+				<input type="text" class="form-control" placeholder="Address Line 1" id="input-Address-1">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Address Line 2" id="input-Address-2">
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col">
+						<input type="text" id="input-City" class="form-control" placeholder="City">
+					</div>
+					<div class="col">
+						<input type="text" class="form-control" placeholder="Australia" disabled>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col">
+						<input type="text" id="input-Pcode" class="form-control" placeholder="Postal/Zip Code">
+					</div>
+					<div class="col">
+						<select name="State" id="input-State" class="form-control">
+							<option selected value="">Choose...</option>
+							<option value="VIC">Victoria</option>
+							<option value="NSW">New South Wales</option>
+							<option value="QLD">Queensland</option>
+							<option value="NT">Nothern Territory</option>
+							<option value="WA">Western Australia</option>
+							<option value="SA">South Australia</option>
+							<option value="TAS">Tasmania</option>
+							<option value="ACT">Australian Capital Territory</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label class="text-primary" for="Phone">Phone</label>
+					<input type="text" id="input-Phone" class="form-control" placeholder="AUS">
+				</div>
+				<div class="form-group col">
+					<label class="text-primary" for="Email">Email</label>
+					<input type="email" id="input-Email" class="form-control" placeholder="something@gmail.com">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="text-primary">Order Type</label>
+				<div>
+					<label class="radio-inline mr-5"><input type="radio" id="input-Order" value="Deliver"
+							name="deliverOpt" checked>Delivery</label>
+					<label class="radio-inline"><input type="radio" id="input-Order" value="Pick-up"
+							name="deliverOpt">Pick-up</label>
+				</div>
+			</div>
+			<div class="msg1"></div>
+			<div class="msg2"></div>
+			<div class="msg3"></div>
+			<div class="msg4"></div>
+			<div class="msg5"></div>
+			<div class="msg6"></div>
+			<div class="msg7"></div>
+			<div class="msg8"></div>
+			<h3 class="my-4">Order</h3>
+			<!-- ORDER FORM  -->
+			<div id="order-f1">
+				<a class="btn btn-primary" id="add-1" data-toggle="collapse" value="1" href="#addMeal"><i
+						class="fa fa-plus"></i>
+					Add
+					Meal</a>
+			</div>
+
+			<div class="collapse showp-3" id="addMeal">
+				<div class="my-5 p-4 bg-light">
+					<h4>Meal 1</h4>
+					<div class="form-row">
+						<div class="form-group col">
+							<p class="text-primary">What would you like?</p>
+							<label class="radio-inline mr-5"><input type="radio" id="input-Entree" name="foodChoice"
+									value="0" checked>Entree -
+								$0.00</label>
+							<label class="radio-inline"><input type="radio" id="input-Entree" name="foodChoice"
+									value="8">Entree
+								+ Side -
+								$8.50</label>
+							<label class="d-block" class="radio-inline"><input type="radio" id="input-Entree"
+									name="foodChoice" value="7">Combo -
+								$7.00</label>
+						</div>
+						<div class="form-group col">
+							<p class="text-primary">What entree would you like?</p>
+							<select name="Entree" id="input-Food" class="form-control">
+								<option selected value="">Choose...</option>
+								<option value="pizza">Pizza</option>
+								<option value="spaghetti">Spaghetti</option>
+								<option value="pasta">Pasta</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col">
+							<label class="text-primary" for="size">Size</label>
+							<select name="Size" id="input-Size" class="form-control">
+								<option selected value="">Choose...</option>
+								<option value="large">Large</option>
+								<option value="medium">Medium</option>
+								<option value="small">Small</option>
+							</select>
+						</div>
+						<div class="form-group col">
+							<label class="text-primary" for="quantities">Quantity</label>
+							<input class="form-control" id="input-Quantity" step="1" min="0" size="4" type="number">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="text-primary" for="special-ins">Special Instructions</label>
+						<textarea class="form-control" name="special-ins" id="input-Special" cols="3"
+							rows="5"></textarea>
+					</div>
+					<div class="msg9"></div>
+					<div class="msg10"></div>
+					<div class="msg11"></div>
+					<div class="msg12"></div>
+				</div>
+			</div>
+			<!-- ORDER FORM 2  -->
+			<div class="d-none" id="order-f2">
+				<a class="btn btn-primary" id="add-2" data-toggle="collapse" href="#addMeal-2"><i
+						class="fa fa-plus"></i>
+					Add
+					Meal</a>
+			</div>
+
+			<div class="collapse showp-3" id="addMeal-2">
+				<div class="my-5 p-4 bg-light">
+					<h4>Meal 2</h4>
+					<div class="form-row">
+						<div class="form-group col">
+							<p class="text-primary">What would you like?</p>
+							<label class="radio-inline mr-5"><input type="radio" id="input-Entree2" name="foodChoice"
+									checked>Entree -
+								$0.00</label>
+							<label class="radio-inline"><input type="radio" id="input-Entree2" name="foodChoice">Entree
+								+ Side -
+								$8.50</label>
+							<label class="d-block" class="radio-inline"><input type="radio" id="input-Entree2"
+									name="foodChoice">Combo -
+								$7.00</label>
+						</div>
+						<div class="form-group col">
+							<p class="text-primary">What entree would you like?</p>
+							<select name="Entree" id="input-Food-2" class="form-control">
+								<option selected value="">Choose...</option>
+								<option value="pizza">Pizza</option>
+								<option value="spaghetti">Spaghetti</option>
+								<option value="pasta">Pasta</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col">
+							<label class="text-primary" for="size">Size</label>
+							<select name="Size" id="input-Size-2" class="form-control">
+								<option selected value="">Choose...</option>
+								<option value="large">Large</option>
+								<option value="medium">Medium</option>
+								<option value="small">Small</option>
+							</select>
+						</div>
+						<div class="form-group col">
+							<label class="text-primary" for="quantities">Quantity</label>
+							<input class="form-control" id="input-Quantity-2" step="1" min="0" size="4" type="number">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="text-primary" for="special-ins">Special Instructions</label>
+						<textarea class="form-control" name="special-ins" id="input-Special-2" cols="3"
+							rows="5"></textarea>
+					</div>
+				</div>
+			</div>
+			<!-- END FORM 2  -->
+			<!-- ORDER FORM 3  -->
+			<div class="d-none" id="order-f3">
+				<a class="btn btn-primary" id="add-3" data-toggle="collapse" href="#addMeal-3"><i
+						class="fa fa-plus"></i>
+					Add
+					Meal</a>
+			</div>
+
+			<div class="collapse showp-3" id="addMeal-3">
+				<div class="my-5 p-4 bg-light">
+					<h4>Meal 3</h4>
+					<div class="form-row">
+						<div class="form-group col">
+							<p class="text-primary">What would you like?</p>
+							<label class="radio-inline mr-5"><input type="radio" id="input-Entree3" name="foodChoice"
+									checked>Entree -
+								$0.00</label>
+							<label class="radio-inline"><input type="radio" id="input-Entree3" name="foodChoice">Entree
+								+ Side -
+								$8.50</label>
+							<label class="d-block" class="radio-inline"><input type="radio" id="input-Entree3"
+									name="foodChoice">Combo -
+								$7.00</label>
+						</div>
+						<div class="form-group col">
+							<p class="text-primary">What entree would you like?</p>
+							<select name="Entree" id="input-Food-3" class="form-control">
+								<option selected value="">Choose...</option>
+								<option value="pizza">Pizza</option>
+								<option value="spaghetti">Spaghetti</option>
+								<option value="pasta">Pasta</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col">
+							<label class="text-primary" for="size">Size</label>
+							<select name="Size" id="input-Size-3" class="form-control">
+								<option selected value="">Choose...</option>
+								<option value="large">Large</option>
+								<option value="medium">Medium</option>
+								<option value="small">Small</option>
+							</select>
+						</div>
+						<div class="form-group col">
+							<label class="text-primary" for="quantities">Quantity</label>
+							<input class="form-control" step="1" id="input-Quantity-3" min="0" size="4" type="number">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="text-primary" for="special-ins">Special Instructions</label>
+						<textarea class="form-control" name="special-ins" id="input-Special-3" cols="3"
+							rows="5"></textarea>
+					</div>
+				</div>
+			</div>
+			<!-- END FORM 3  -->
+			<!-- ORDER FORM 4  -->
+			<div class="d-none" id="order-f4">
+				<a class="btn btn-primary" id="add-4" data-toggle="collapse" href="#addMeal-4"><i
+						class="fa fa-plus"></i>
+					Add
+					Meal</a>
+			</div>
+
+			<div class="collapse showp-3" id="addMeal-4">
+				<div class="my-5 p-4 bg-light">
+					<h4>Meal 4</h4>
+					<div class="form-row">
+						<div class="form-group col">
+							<p class="text-primary">What would you like?</p>
+							<label class="radio-inline mr-5"><input type="radio" id="input-Entree4" name="foodChoice"
+									checked>Entree -
+								$0.00</label>
+							<label class="radio-inline"><input type="radio" id="input-Entree4" name="foodChoice">Entree
+								+ Side -
+								$8.50</label>
+							<label class="d-block" class="radio-inline"><input type="radio" id="input-Entree4"
+									name="foodChoice">Combo -
+								$7.00</label>
+						</div>
+						<div class="form-group col">
+							<p class="text-primary">What entree would you like?</p>
+							<select name="Entree" id="input-Food-4" class="form-control">
+								<option selected value="">Choose...</option>
+								<option value="pizza">Pizza</option>
+								<option value="spaghetti">Spaghetti</option>
+								<option value="pasta">Pasta</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col">
+							<label class="text-primary" for="size">Size</label>
+							<select name="Size" id="input-Size-4" class="form-control">
+								<option selected value="">Choose...</option>
+								<option value="large">Large</option>
+								<option value="medium">Medium</option>
+								<option value="small">Small</option>
+							</select>
+						</div>
+						<div class="form-group col">
+							<label class="text-primary" for="quantities">Quantity</label>
+							<input class="form-control" id="input-Quantity-4" step="1" min="0" size="4" type="number">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="text-primary" for="special-ins">Special Instructions</label>
+						<textarea class="form-control" name="special-ins" id="input-Special-4" cols="3"
+							rows="5"></textarea>
+					</div>
+				</div>
+			</div>
+			<!-- END FORM 4  -->
+			<!-- ORDER FORM 5  -->
+			<div class="d-none" id="order-f5">
+				<a class="btn btn-primary" id="add-4" data-toggle="collapse" href="#addMeal-5"><i
+						class="fa fa-plus"></i>
+					Add
+					Meal</a>
+			</div>
+
+			<div class="collapse showp-3" id="addMeal-5">
+				<div class="my-5 p-4 bg-light">
+					<h4>Meal 5</h4>
+					<div class="form-row">
+						<div class="form-group col">
+							<p class="text-primary">What would you like?</p>
+							<label class="radio-inline mr-5"><input type="radio" id="input-Entree5" name="foodChoice"
+									checked>Entree -
+								$0.00</label>
+							<label class="radio-inline"><input type="radio" id="input-Entree5" name="foodChoice">Entree
+								+ Side -
+								$8.50</label>
+							<label class="d-block" class="radio-inline"><input type="radio" id="input-Entree5"
+									name="foodChoice">Combo -
+								$7.00</label>
+						</div>
+						<div class="form-group col">
+							<p class="text-primary">What entree would you like?</p>
+							<select name="Entree" id="input-Food-5" class="form-control">
+								<option selected value="">Choose...</option>
+								<option value="pizza">Pizza</option>
+								<option value="spaghetti">Spaghetti</option>
+								<option value="pasta">Pasta</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col">
+							<label class="text-primary" for="size">Size</label>
+							<select name="Size" id="input-Size-5" class="form-control">
+								<option selected value="">Choose...</option>
+								<option value="large">Large</option>
+								<option value="medium">Medium</option>
+								<option value="small">Small</option>
+							</select>
+						</div>
+						<div class="form-group col">
+							<label class="text-primary" for="quantities">Quantity</label>
+							<input class="form-control" id="input-Quantity-5" step="1" min="0" size="4" type="number">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="text-primary" for="special-ins">Special Instructions</label>
+						<textarea class="form-control" name="special-ins" id="input-Special-5" cols="3"
+							rows="5"></textarea>
+					</div>
+				</div>
+			</div>
+			<!-- END FORM 5  -->
+			<div class="d-flex justify-content-end">
+				<button type="submit" class="btn btn-primary">Add to Cart</button>
+			</div>
+		</form>
+		<!-- END OF FORM  -->
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="../Shared-food-ordering/scripts/order.js"></script>
+	<script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>

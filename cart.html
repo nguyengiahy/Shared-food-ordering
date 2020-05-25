@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cart</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles/cart.css">
 </head>
+
 <body>
 	<div class="container">
 		<div class="row">
@@ -15,56 +18,36 @@
 				<h2>My items</h2>
 			</div>
 			<div class="col-md-12">
-				<table class="table table-bordered text-center">
+				<table class="table table-bordered table-hover text-center">
 					<thead>
 						<tr>
-							<td width="600">Name</td>
+							<td width="600px">Product</td>
 							<td>Size</td>
 							<td>Price</td>
 							<td>Quantity</td>
+							<td>Total</td>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td><span id="">1</span></td>			<!-- Product name -->
-							<td><span id="">1</span></td>			<!-- Product size -->
-							<td><span id="">1</span></td>			<!-- Product price -->
-							<td><span id="">1</span></td>			<!-- Product quantity -->
-						</tr>
-						<tr>
-							<td><span id="">2</span></td>			<!-- Product name -->
-							<td><span id="">2</span></td>			<!-- Product size -->
-							<td><span id="">2</span></td>			<!-- Product price -->
-							<td><span id="">2</span></td>			<!-- Product quantity -->
-						</tr>
-						<tr>
-							<td><span id="">3</span></td>			<!-- Product name -->
-							<td><span id="">3</span></td>			<!-- Product size -->
-							<td><span id="">3</span></td>			<!-- Product price -->
-							<td><span id="">3</span></td>			<!-- Product quantity -->
-						</tr>
-						<tr>
-							<td><span id="">4</span></td>			<!-- Product name -->
-							<td><span id="">4</span></td>			<!-- Product size -->
-							<td><span id="">4</span></td>			<!-- Product price -->
-							<td><span id="">4</span></td>			<!-- Product quantity -->
-						</tr>
+					<tbody id="cart-confirm">
 					</tbody>
 				</table>
 			</div>
 			<div class="col-md-12">
 				<div class="pull-right">
-					<p>Total bill : <span id="">123456</span></p>		<!-- Total cost -->
+					<p>Total bill : <span id="">123456</span></p> <!-- Total cost -->
 				</div>
 			</div>
-			<div class="col-md-12">										<!-- Confirm button -->
+			<div class="col-md-12">
+				<!-- Confirm button -->
 				<div class="pull-right">
 					<a href="#" class="btn">Back to order</a>
 					<a href="payment.html" class="btn btn-success">Checkout</a>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
+	<script src="../Shared-food-ordering/scripts/cart_confirm.js"></script>
 </body>
+
 </html>

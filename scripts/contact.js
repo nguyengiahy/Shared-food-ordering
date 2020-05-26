@@ -6,3 +6,10 @@ $(document).ready(function(){
 		$(this).parent().siblings().removeClass('active');
 	});
 });
+
+function displayAlert(){
+	alert("Thank you! We have recieved your queries.");
+}
+
+var form = document.getElementById("form");
+form.onsubmit = displayAlert;

@@ -1,79 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Creating contact us page for shared food ordering project">
 	<meta name="keywords"    content="shared food ordering, contact us page">
 	<meta name="author"      content="Hy Gia Nguyen">
 	<title>Contact us</title>
 	<link rel="stylesheet" type="text/css" href="styles/contact_us.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/40ee252bb3.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
+	<!-- HEADER  -->
+    <header id="header" class="py-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left header-left">
+                    <i class="fa fa-phone"></i>
+                    <span class="mr-3">0423824295</span>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>something@gmail.com</span>
+                </div>
+                <div class="col-md-6 text-center text-md-right mt-1 mt-md-0 header-right">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- NAVBAR  -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+        <div class="container">
+            <a href="index.html" class="header-logo navbar-brand">
+                <h1 class="m-0"><span>Swin</span>Food</h1>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myMenu">
+                <ul class="navbar-nav navbar-nav--menu ml-auto">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link">HOME</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="order.html" class="nav-link">ORDER</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="review.html" class="nav-link">REVIEW</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="cart.html" class="nav-link">CART</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="login.html" class="nav-link">LOGIN</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="contact.html" class="nav-link">CONTACT US</a>
+                        <div class="nav-item_line"></div>
+                    </li>
+            </div>
+        </div>
+    </nav>
 	<div class="container">
 		<h1>FAQs Section</h1>
 
 		<!-- Accordian starts -->
 		<div class="accordian">
-			<h3>Question 1: Lorem Ipsum</h3>
+			<h3>Question 1: What if I can't find the restaurant?</h3>
 			<div class="content">
 				<div class="content-inner">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>If you're having issues locating the restaurant you ordered from, reach out to the restaurant directly for further assistance.</p>
 				</div>
 			</div>
 		</div>
 
 		<!-- Accordian starts -->
 		<div class="accordian">
-			<h3>Question 2: Lorem Ipsum</h3>
+			<h3>Question 2: Where is my order number?</h3>
 			<div class="content">
 				<div class="content-inner">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>The order identification number is located at the top of the tracking screen below your first name and last initial and on the receipt.<br>
+					   Every order has an order identification number to help you check that you're picking up the right order.<br>
+					   When you pick up the order, verify your order identification number with the restaurant.</p>
 				</div>
 			</div>
 		</div>
 
 		<!-- Accordian starts -->
 		<div class="accordian">
-			<h3>Question 3: Lorem Ipsum</h3>
+			<h3>Question 3: How do I order Pick-up?</h3>
 			<div class="content">
 				<div class="content-inner">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>1. Choose the dining mode "Pick-up" <br>
+					   2. Select "ASAP" order or "SCHEDULED" order. You'll then be shown the prep time, restaurant distance, price and rating for restaurants with a Pick-up option.<br>
+					   3. Once you've placed a Pick-up order, you'll be notified when the restaurant accepts the order, the estimated time the order will be ready, and when the order is ready for collection.</p>
 				</div>
 			</div>
 		</div>
 
 		<!-- Accordian starts -->
 		<div class="accordian">
-			<h3>Question 3: Lorem Ipsum</h3>
+			<h3>Question 3: What is a Pick-up order?</h3>
 			<div class="content">
 				<div class="content-inner">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>A Pick-up order is when you place an order through the Eats app and you go to the restaurant to collect it. You'll be able to see the different order stages and know exactly when the order is ready for you to collect.<br>
+
+					NOTE: Pick-up is only available in certain surburbs.</p>
 				</div>
 			</div>
 		</div>
 
 		<h1>Contact us</h1>
-		<div class="contact-form">
+		<div class="contact-form" id="form">
 			<form>
 				<p>
 					<input type="text" name="name" placeholder="Name" required="required">
@@ -94,7 +146,20 @@
 			</form>
 		</div>
 	</div>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-	<script type="text/javascript" src="contact.js"></script>
+	
+
+	<script src="scripts/nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/contact.js"></script>
 </body>
 </html>

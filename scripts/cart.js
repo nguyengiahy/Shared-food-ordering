@@ -34,26 +34,26 @@ function getInfo(){
 function costCalc(){
 	var result = 0;
 	//item 1
-	if (localStorage.getItem("mealQuantity1") != "0")
-		result += Number(localStorage.getItem("mealPrice1")) * Number(localStorage.getItem("mealQuantity1"));		//price * quantity
+	if (localStorage.getItem("mealPrice1") != undefined)
+		result += Number(localStorage.getItem("mealPrice1"));
 
 	//item 2
-	if (localStorage.getItem("mealQuantity2") != "0")
-		result += Number(localStorage.getItem("mealPrice2")) * Number(localStorage.getItem("mealQuantity2"));		//price * quantity
+	if (localStorage.getItem("mealPrice2") != undefined)
+		result += Number(localStorage.getItem("mealPrice2"));
 
 	//item 3
-	if (localStorage.getItem("mealQuantity3") != "0")
-		result += Number(localStorage.getItem("mealPrice3")) * Number(localStorage.getItem("mealQuantity3"));		//price * quantity
+	if (localStorage.getItem("mealQuantity3") != undefined)
+		result += Number(localStorage.getItem("mealPrice3"));
 
 	//item 4
-	if (localStorage.getItem("mealQuantity4") != "0")
-		result += Number(localStorage.getItem("mealPrice4")) * Number(localStorage.getItem("mealQuantity4"));		//price * quantity
+	if (localStorage.getItem("mealQuantity4") != undefined)
+		result += Number(localStorage.getItem("mealPrice4"));
 
 	//item 5
-	if (localStorage.getItem("mealQuantity5") != "0")
-		result += Number(localStorage.getItem("mealPrice5")) * Number(localStorage.getItem("mealQuantity5"));		//price * quantity
+	if (localStorage.getItem("mealQuantity5") != undefined)
+		result += Number(localStorage.getItem("mealPrice5"));
 
-	return result;
+	return result + '$';
 }
 
 function init(){

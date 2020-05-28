@@ -91,7 +91,7 @@ function validate() {
     if (!firstname.match(/^[a-zA-Z]+$/)) {
         const msg = document.querySelector(".msg1");
         msg.classList.add("text-light", "bg-warning", "my-2");
-        msg.innerHTML = ' Please enter only alpha and maximum 20 character';
+        msg.innerHTML = ' Please enter only alpha and maximum 20 character for first name';
         result = false;
         setTimeout(() => msg.remove(), 5000);
 
@@ -101,7 +101,7 @@ function validate() {
     if (!lastname.match(/^[a-zA-Z]+$/)) {
         const msg = document.querySelector(".msg2");
         msg.classList.add("text-light", "bg-warning", "my-2");
-        msg.innerHTML = ' Please enter only alpha and maximum 20 character';
+        msg.innerHTML = ' Please enter only alpha and maximum 20 character for last name';
         result = false;
         setTimeout(() => msg.remove(), 5000);
     }
@@ -110,7 +110,7 @@ function validate() {
     if (address1 == "") {
         const msg = document.querySelector(".msg3");
         msg.classList.add("text-light", "bg-warning", "my-2");
-        msg.innerHTML = ` Please enter only alpha and maximum 40 character`
+        msg.innerHTML = ` Please enter only alpha and maximum 40 character for address 1`
         result = false;
         setTimeout(() => msg.remove(), 5000);
     }
@@ -119,7 +119,7 @@ function validate() {
     if (address2 == "") {
         const msg = document.querySelector(".msg3");
         msg.classList.add("text-light", "bg-warning", "my-2");
-        msg.innerHTML = ` Please enter only alpha and maximum 40 character`
+        msg.innerHTML = ` Please enter only alpha and maximum 40 character for address 2`
         result = false;
         setTimeout(() => msg.remove(), 5000);
     }
@@ -128,7 +128,7 @@ function validate() {
     if (!suburb.match(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/)) {
         const msg = document.querySelector(".msg4");
         msg.classList.add("text-light", "bg-warning", "my-2");
-        msg.innerHTML = ` Please enter only alpha and maximum 40 character`
+        msg.innerHTML = ` Please enter only alpha and maximum 40 character for suburb`
         result = false;
         setTimeout(() => msg.remove(), 5000);
     }
@@ -374,35 +374,35 @@ function storeBooking(firstname, lastname, address1, address2, suburb, postcode,
     localStorage.state = state;
     localStorage.order = order;
     // Store order 1
-    localStorage.mealID1 = food;
+    localStorage.mealID1 = 1;
     localStorage.food = food;
     localStorage.mealPrice1 = price;
     localStorage.mealSize1 = size;
     localStorage.mealQuantity1 = quantity;
     localStorage.special = special;
     // Store order 2
-    localStorage.mealID2 = food2;
+    localStorage.mealID2 = 2;
     localStorage.food2 = food2;
     localStorage.mealPrice2 = price2;
     localStorage.mealSize2 = size2;
     localStorage.mealQuantity2 = quantity2;
     localStorage.special2 = special2;
     // Store order 3
-    localStorage.mealID3 = food3;
+    localStorage.mealID3 = 3;
     localStorage.food3 = food3;
     localStorage.mealPrice3 = price3;
     localStorage.mealSize3 = size3;
     localStorage.mealQuantity3 = quantity3;
     localStorage.special3 = special3;
     // Store order 4
-    localStorage.mealID4 = food4;
+    localStorage.mealID4 = 4;
     localStorage.food4 = food4;
     localStorage.mealPrice4 = price4;
     localStorage.mealSize4 = size4;
     localStorage.mealQuantity4 = quantity4;
     localStorage.special4 = special4;
     // Store order 5
-    localStorage.mealID5 = food5;
+    localStorage.mealID5 = 5;
     localStorage.food5 = food5;
     localStorage.mealPrice5 = price5;
     localStorage.mealSize5 = size5;
@@ -437,8 +437,9 @@ function calculatePrice(food, quantity, size, price) {
                 } else if (size == "small") {
                     price = (8.5 * quantity)
                 }
-                case "kebab":
+                case "Kebab":
                     if (size == "large") {
+                        alert("hello");
                         price = (12.5 * quantity) * 2
                     } else if (size == "medium") {
                         price = (12.5 * quantity) * 1.5

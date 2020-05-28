@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cart</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="styles/cart.css">
-	
 
-	<link rel="stylesheet" href="./styles/index.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="styles/cart.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/40ee252bb3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-	<!-- HEADER  -->
+    <!-- HEADER  -->
     <header id="header" class="py-2">
         <div class="container-fluid">
             <div class="row">
@@ -73,75 +72,145 @@
             </div>
         </div>
     </nav>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>My items</h2>
-			</div>
-			<div class="col-md-12">
-				<table class="table table-bordered text-center">
-					<thead>
-						<tr>
-							<td width="600">Name</td>
-							<td>Size</td>
-							<td>Price</td>
-							<td>Quantity</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><span id="mealID1">1</span></td>			<!-- Product name -->
-							<td><span id="mealSize1">1</span></td>			<!-- Product size -->
-							<td><span id="mealPrice1">1</span></td>			<!-- Product price -->
-							<td><span id="mealQuantity1">1</span></td>			<!-- Product quantity -->
-						</tr>
-						<tr>
-							<td><span id="mealID2">2</span></td>			<!-- Product name -->
-							<td><span id="mealSize2">2</span></td>			<!-- Product size -->
-							<td><span id="mealPrice2">2</span></td>			<!-- Product price -->
-							<td><span id="mealQuantity2">2</span></td>			<!-- Product quantity -->
-						</tr>
-						<tr>
-							<td><span id="mealID3">3</span></td>			<!-- Product name -->
-							<td><span id="mealSize3">3</span></td>			<!-- Product size -->
-							<td><span id="mealPrice3">3</span></td>			<!-- Product price -->
-							<td><span id="mealQuantity3">3</span></td>			<!-- Product quantity -->
-						</tr>
-						<tr>
-							<td><span id="mealID4">4</span></td>			<!-- Product name -->
-							<td><span id="mealSize4">4</span></td>			<!-- Product size -->
-							<td><span id="mealPrice4">4</span></td>			<!-- Product price -->
-							<td><span id="mealQuantity4">4</span></td>			<!-- Product quantity -->
-						</tr>
-						<tr>
-							<td><span id="mealID5">5</span></td>			<!-- Product name -->
-							<td><span id="mealSize5">5</span></td>			<!-- Product size -->
-							<td><span id="mealPrice5">5</span></td>			<!-- Product price -->
-							<td><span id="mealQuantity5">5</span></td>			<!-- Product quantity -->
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="col-md-12">
-				<div class="pull-right">
-					<p>Total bill : <span id="totalCost">123456</span></p>		<!-- Total cost -->
-				</div>
-			</div>
-			<div class="col-md-12">										<!-- Confirm button -->
-				<div class="pull-right">
-					<a href="order.html" class="btn">Back to order</a>
-					<a href="payment.html" class="btn btn-success">Checkout</a>
-				</div>
-			</div>
-			
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 my-5 text-center">
+                <h2>Your Order</h2>
+            </div>
+            <div class="col-md-12">
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <td>Meal ID</td>
+                            <td width="400">Order</td>
+                            <td>Size</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span id="mealID1">1</span></td> <!-- Product id -->
+                            <td><span id="food1">1</span></td> <!-- Order name -->
+                            <td><span id="mealSize1">1</span></td> <!-- Product size -->
+                            <td><span id="mealPrice1">1</span></td> <!-- Product price -->
+                            <td><span id="mealQuantity1">1</span></td> <!-- Product quantity -->
+                        </tr>
+                        <tr>
+                            <td><span id="mealID2">2</span></td> <!-- Product name -->
+                            <td><span id="food2">1</span></td> <!-- Order name -->
+                            <td><span id="mealSize2">2</span></td> <!-- Product size -->
+                            <td><span id="mealPrice2">2</span></td> <!-- Product price -->
+                            <td><span id="mealQuantity2">2</span></td> <!-- Product quantity -->
+                        </tr>
+                        <tr>
+                            <td><span id="mealID3">3</span></td> <!-- Product name -->
+                            <td><span id="food3">1</span></td> <!-- Order name -->
+                            <td><span id="mealSize3">3</span></td> <!-- Product size -->
+                            <td><span id="mealPrice3">3</span></td> <!-- Product price -->
+                            <td><span id="mealQuantity3">3</span></td> <!-- Product quantity -->
+                        </tr>
+                        <tr>
+                            <td><span id="mealID4">4</span></td> <!-- Product name -->
+                            <td><span id="food4">1</span></td> <!-- Order name -->
+                            <td><span id="mealSize4">4</span></td> <!-- Product size -->
+                            <td><span id="mealPrice4">4</span></td> <!-- Product price -->
+                            <td><span id="mealQuantity4">4</span></td> <!-- Product quantity -->
+                        </tr>
+                        <tr>
+                            <td><span id="mealID5">5</span></td> <!-- Product name -->
+                            <td><span id="food5">1</span></td> <!-- Order name -->
+                            <td><span id="mealSize5">5</span></td> <!-- Product size -->
+                            <td><span id="mealPrice5">5</span></td> <!-- Product price -->
+                            <td><span id="mealQuantity5">5</span></td> <!-- Product quantity -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <div class="text-right my-2">
+                    <p>Total bill : <span id="totalCost">123456</span></p> <!-- Total cost -->
+                </div>
+            </div>
+            <div class="col-md-12">
+                <!-- Confirm button -->
+                <div class="text-right">
+                    <a href="order.html" class="btn">Back to order</a>
+                    <a href="payment.html" class="btn btn-success">Checkout</a>
+                </div>
+            </div>
 
-	<!-- FOOTER  -->
-    <footer>
-        <p>Swin Food, Copyright@2020</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="my-5">
+        <div class="footer-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer_about-us mb-3 mb-md-0">
+                        <h2>About Us</h2>
+                        <p>Nam libero tempore cum vulputate id est id, pretium semper enim. Morbi viverra congue
+                            nisi
+                            vel pulvinar posuere sapien eros.</p>
+                    </div>
+                    <div class="col-md-4 footer_news mb-3 mb-md-0">
+                        <h2>Latest News</h2>
+                        <p>
+                            <i class="fa fa-long-arrow-alt-right"></i>
+                            <span>Lorem ipsum neque vulputate</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-long-arrow-alt-right"></i>
+                            <span>Lorem ipsum neque vulputate</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-long-arrow-alt-right"></i>
+                            <span>Lorem ipsum neque vulputate</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-long-arrow-alt-right"></i>
+                            <span>Lorem ipsum neque vulputate</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-long-arrow-alt-right"></i>
+                            <span>Lorem ipsum neque vulputate</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4 footer_contact mb-3 mb-md-0">
+                        <h2>Contact Info</h2>
+                        <p>
+                            <i class="fa fa-map-marker-alt"></i>
+                            <span>8088 Hawthorn, Victoria, Melbourne.</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope"></i>
+                            <span>something@gmail.com</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-phone"></i>
+                            <span>+09187 8088 9436</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row footer_form mt-md-5">
+                    <div class="col-md-5 col-lg-4">
+                        <h2 class=" text-left text-md-right">Sign up for our Newsletter </h2>
+                    </div>
+                    <div class="col-md-7 col-lg-8">
+                        <input type="email" name="email" placeholder="Enter Email Address...">
+                        <button class="btn btn-footer-submit text-white">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right py-3 text-center text-white">
+            <p class="mb-0">
+                <i class="fa fa-copyright mr-2"></i>2018 Instruction. All rights reserved | Design by<span>
+                    SwinFood</span></p>
+        </div>
     </footer>
-    <!-- FOOTER  -->
+    <!-- END OF FOOTER  -->
     <script src="scripts/nav.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -154,4 +223,5 @@
     </script>
     <script src="scripts/cart.js"></script>
 </body>
+
 </html>

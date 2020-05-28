@@ -72,70 +72,141 @@
             </div>
         </div>
     </nav>
-    <h1>See why our customers love using SwinFood</h1>
-    <p>
-        At SwinFood we strive ourselves to be provide the quality of service that you expect in an online food service.
-        We are connected to a number of food stores that provide you with just what you need. This allows us to provide
-        high quality of service
-        that you would expect. If you don't believe us hear from our satisfied customers!
-    </p>
-    <!--Expanding grid -->
-    <div class="expanding-grid">
-        <!-- <ul class ="links">
-            <li><a href="#review1">Review 1</a></li>
-            <li><a href="#review2">Review 2</a></li>
-            <li><a href="#review3">Review 3</a></li>
-            <li><a href="#review4">Review 4</a></li>
-        </ul> -->
-        <div class="column" id="R1" onclick="openTab('review1');"><img src="images/showcase.jpg" alt="Burger"
-                style="width: 100%;"></div>
-        <div class="column" id="R2" onclick="openTab('review2');"><img src="images/highlight-1.jpg" alt="Meal"
-                style="width: 100%;"></div>
-        <div class="column" id="R3" onclick="openTab('review3');"><img src="images/highlight-2.jpg" alt="Meal"
-                style="width: 100%;"></div>
-        <div class="column" id="R4" onclick="openTab('review4');"><img src="images/highlight-3.jpg" alt="Meal"
-                style="width: 100%;"></div>
-    </div>
-
-    <div id="review1" class="containerTab" style="display:none;background:green">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-        <h2>Burger and chips review</h2>
-        <p>
-            As an experienced buyer, that has dealt with online food services I found this to provide the most options
-            for food delivery and pick up. The food was of adequete standard and their UI needs some work but just for
-            the number of options
-            I would recommend SwinFood.
+    <div class="container">
+        <h1 class="text-center my-3">See why our customers love using SwinFood</h1>
+        <p class="text-center ">
+            At SwinFood we strive ourselves to be provide the quality of service that you expect in an online food
+            service.
+            We are connected to a number of food stores that provide you with just what you need. This allows us to
+            provide
+            high quality of service
+            that you would expect. If you don't believe us hear from our satisfied customers!
         </p>
-    </div>
+        <!--Expanding grid -->
+        <div class="expanding-grid">
+            <!-- <ul class ="links">
+                <li><a href="#review1">Review 1</a></li>
+                <li><a href="#review2">Review 2</a></li>
+                <li><a href="#review3">Review 3</a></li>
+                <li><a href="#review4">Review 4</a></li>
+            </ul> -->
+            <div class="column" id="R1" onclick="openTab('review1');"><img src="images/showcase.jpg" alt="Burger"
+                    style="width: 100%;"></div>
+            <div class="column" id="R2" onclick="openTab('review2');"><img src="images/highlight-1.jpg" alt="Meal"
+                    style="width: 100%;"></div>
+            <div class="column" id="R3" onclick="openTab('review3');"><img src="images/highlight-2.jpg" alt="Meal"
+                    style="width: 100%;"></div>
+            <div class="column" id="R4" onclick="openTab('review4');"><img src="images/highlight-3.jpg" alt="Meal"
+                    style="width: 100%;"></div>
+        </div>
 
-    <div id="review2" class="containerTab" style="display:none;background:blue">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-        <h2>Cambodian Curry (Laksa) </h2>
-        <p>
-            I've been trying to look at new restaurants in my area and SwinFood has provided a way of discovering
-            restaurants in my area.
-            They provide a quality of service that is better than other places and some really good food. Would
-            recommend.
-        </p>
-    </div>
+        <div id="review1" class="containerTab" style="display:none;background:green">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Burger and chips review</h2>
+            <p>
+                As an experienced buyer, that has dealt with online food services I found this to provide the most
+                options
+                for food delivery and pick up. The food was of adequete standard and their UI needs some work but just
+                for
+                the number of options
+                I would recommend SwinFood.
+            </p>
+        </div>
 
-    <div id="review3" class="containerTab" style="display:none;background:red">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-        <h2>Breakfast meal</h2>
-        <p>Eh the breakfast meal was ok, wasn't really sure about the taste but service was fine. I am sort of on the
-            fence with recommending the service</p>
+        <div id="review2" class="containerTab" style="display:none;background:blue">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Cambodian Curry (Laksa) </h2>
+            <p>
+                I've been trying to look at new restaurants in my area and SwinFood has provided a way of discovering
+                restaurants in my area.
+                They provide a quality of service that is better than other places and some really good food. Would
+                recommend.
+            </p>
+        </div>
+
+        <div id="review3" class="containerTab" style="display:none;background:red">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Breakfast meal</h2>
+            <p>Eh the breakfast meal was ok, wasn't really sure about the taste but service was fine. I am sort of on
+                the
+                fence with recommending the service</p>
+        </div>
+        <div id="review4" class="containerTab" style="display:none;background:salmon">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <h2>Giant Burger</h2>
+            <p>I've always seen this massive burger and since restaurants aren't really open during Covid-19.
+                SwinFood has allowed me to experience this massive burger. Would higly recommend!
+            </p>
+        </div>
     </div>
-    <div id="review4" class="containerTab" style="display:none;background:salmon">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-        <h2>Giant Burger</h2>
-        <p>I've always seen this massive burger and since restaurants aren't really open during Covid-19.
-            SwinFood has allowed me to experience this massive burger. Would higly recommend!
-        </p>
-    </div>
-    <!-- FOOTER  -->
-    <footer>
-        <p>Swin Food, Copyright@2020</p>
+    <!-- FOOTER -->
+    <footer class="my-5">
+        <div class="footer-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer_about-us mb-3 mb-md-0">
+                        <h2>About Us</h2>
+                        <p>Nam libero tempore cum vulputate id est id, pretium semper enim. Morbi viverra congue
+                            nisi
+                            vel pulvinar posuere sapien eros.</p>
+                    </div>
+                    <div class="col-md-4 footer_news mb-3 mb-md-0">
+                        <h2>Latest News</h2>
+                        <p>
+                            <i class="fa fa-long-arrow-alt-right"></i>
+                            <span>Lorem ipsum neque vulputate</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-long-arrow-alt-right"></i>
+                            <span>Lorem ipsum neque vulputate</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-long-arrow-alt-right"></i>
+                            <span>Lorem ipsum neque vulputate</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-long-arrow-alt-right"></i>
+                            <span>Lorem ipsum neque vulputate</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-long-arrow-alt-right"></i>
+                            <span>Lorem ipsum neque vulputate</span>
+                        </p>
+                    </div>
+                    <div class="col-md-4 footer_contact mb-3 mb-md-0">
+                        <h2>Contact Info</h2>
+                        <p>
+                            <i class="fa fa-map-marker-alt"></i>
+                            <span>8088 Hawthorn, Victoria, Melbourne.</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope"></i>
+                            <span>something@gmail.com</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-phone"></i>
+                            <span>+09187 8088 9436</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row footer_form mt-md-5">
+                    <div class="col-md-5 col-lg-4">
+                        <h2 class=" text-left text-md-right">Sign up for our Newsletter </h2>
+                    </div>
+                    <div class="col-md-7 col-lg-8">
+                        <input type="email" name="email" placeholder="Enter Email Address...">
+                        <button class="btn btn-footer-submit text-white">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right py-3 text-center text-white">
+            <p class="mb-0">
+                <i class="fa fa-copyright mr-2"></i>2018 Instruction. All rights reserved | Design by<span>
+                    SwinFood</span></p>
+        </div>
     </footer>
+    <!-- END OF FOOTER  -->
     <!-- FOOTER  -->
     <script src="../Shared-food-ordering/scripts/nav.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

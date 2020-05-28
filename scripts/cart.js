@@ -1,7 +1,13 @@
 "use strict"
 
-function getInfo(){
-	if (typeof(Storage)!=="undefined"){	
+function getInfo() {
+	if (typeof (Storage) !== "undefined") {
+		document.getElementById("food1").textContent = localStorage.getItem("food");
+		document.getElementById("food2").textContent = localStorage.getItem("food2");
+		document.getElementById("food3").textContent = localStorage.getItem("food3");
+		document.getElementById("food4").textContent = localStorage.getItem("food4");
+		document.getElementById("food5").textContent = localStorage.getItem("food5");
+
 		document.getElementById("mealID1").textContent = localStorage.getItem("mealID1");
 		document.getElementById("mealID2").textContent = localStorage.getItem("mealID2");
 		document.getElementById("mealID3").textContent = localStorage.getItem("mealID3");
@@ -31,7 +37,7 @@ function getInfo(){
 	}
 }
 
-function costCalc(){
+function costCalc() {
 	var result = 0;
 	//item 1
 	if (localStorage.getItem("mealPrice1") != undefined)
@@ -56,8 +62,8 @@ function costCalc(){
 	return result + '$';
 }
 
-function init(){
-	getInfo();		//fill up the page with stored information
+function init() {
+	getInfo(); //fill up the page with stored information
 }
 
 window.onload = init;

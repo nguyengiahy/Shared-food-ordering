@@ -15,6 +15,26 @@
 </head>
 
 <body>
+	<!-- HEADER  -->
+	<header id="header" class="py-2">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 text-center text-md-left header-left">
+					<i class="fa fa-phone"></i>
+					<span class="mr-3">0423824295</span>
+					<i class="fa fa-envelope-o"></i>
+					<span>something@gmail.com</span>
+				</div>
+				<div class="col-md-6 text-center text-md-right mt-1 mt-md-0 header-right">
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-pinterest"></i>
+					<i class="fab fa-linkedin"></i>
+				</div>
+
+			</div>
+		</div>
+	</header>
 	<!-- NAVBAR  -->
 	<nav class="navbar sticky-top navbar-expand-md navbar-dark">
 		<div class="container">
@@ -25,32 +45,32 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="myMenu">
-                <ul class="navbar-nav navbar-nav--menu ml-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">HOME</a>
-                        <div class="nav-item_line"></div>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="order1.html" class="nav-link">ORDER</a>
-                        <div class="nav-item_line"></div>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="review.html" class="nav-link">REVIEW</a>
-                        <div class="nav-item_line"></div>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="cart.html" class="nav-link">CART</a>
-                        <div class="nav-item_line"></div>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="login.html" class="nav-link">LOGIN</a>
-                        <div class="nav-item_line"></div>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="contact.html" class="nav-link">CONTACT US</a>
-                        <div class="nav-item_line"></div>
-                    </li>
-            </div>
+				<ul class="navbar-nav navbar-nav--menu ml-auto">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">HOME</a>
+						<div class="nav-item_line"></div>
+					</li>
+					<li class="nav-item active">
+						<a href="order1.html" class="nav-link">ORDER</a>
+						<div class="nav-item_line"></div>
+					</li>
+					<li class="nav-item ">
+						<a href="review.html" class="nav-link">REVIEW</a>
+						<div class="nav-item_line"></div>
+					</li>
+					<li class="nav-item ">
+						<a href="cart.html" class="nav-link">CART</a>
+						<div class="nav-item_line"></div>
+					</li>
+					<li class="nav-item ">
+						<a href="login.html" class="nav-link">LOGIN</a>
+						<div class="nav-item_line"></div>
+					</li>
+					<li class="nav-item ">
+						<a href="contact.html" class="nav-link">CONTACT US</a>
+						<div class="nav-item_line"></div>
+					</li>
+			</div>
 		</div>
 	</nav>
 	<!-- END OF NAV  -->
@@ -389,20 +409,74 @@
 		</form>
 		<!-- END OF FORM  -->
 	</div>
-	<script>
-		$('.carousel').carousel({
-				interval: 2000;
-			}),
-
-			$(".nav-item").on("click", function (e) {
-				$("li.nav-item").removeClass("active");
-				$(this).addClass("active");
-			});
-	</script>
 	<!-- FOOTER  -->
-	<footer>
-		<p>Swin Food, Copyright@2020</p>
+	<!-- FOOTER  -->
+	<footer class="my-5">
+		<div class="footer-detail">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 footer_about-us mb-3 mb-md-0">
+						<h2>About Us</h2>
+						<p>Nam libero tempore cum vulputate id est id, pretium semper enim. Morbi viverra congue nisi
+							vel pulvinar posuere sapien eros.</p>
+					</div>
+					<div class="col-md-4 footer_news mb-3 mb-md-0">
+						<h2>Latest News</h2>
+						<p>
+							<i class="fa fa-long-arrow-alt-right"></i>
+							<span>Lorem ipsum neque vulputate</span>
+						</p>
+						<p>
+							<i class="fa fa-long-arrow-alt-right"></i>
+							<span>Lorem ipsum neque vulputate</span>
+						</p>
+						<p>
+							<i class="fa fa-long-arrow-alt-right"></i>
+							<span>Lorem ipsum neque vulputate</span>
+						</p>
+						<p>
+							<i class="fa fa-long-arrow-alt-right"></i>
+							<span>Lorem ipsum neque vulputate</span>
+						</p>
+						<p>
+							<i class="fa fa-long-arrow-alt-right"></i>
+							<span>Lorem ipsum neque vulputate</span>
+						</p>
+					</div>
+					<div class="col-md-4 footer_contact mb-3 mb-md-0">
+						<h2>Contact Info</h2>
+						<p>
+							<i class="fa fa-map-marker-alt"></i>
+							<span>8088 Hawthorn, Victoria, Melbourne.</span>
+						</p>
+						<p>
+							<i class="fa fa-envelope"></i>
+							<span>something@gmail.com</span>
+						</p>
+						<p>
+							<i class="fa fa-phone"></i>
+							<span>+09187 8088 9436</span>
+						</p>
+					</div>
+				</div>
+				<div class="row footer_form mt-md-5">
+					<div class="col-md-5 col-lg-4">
+						<h2 class=" text-left text-md-right">Sign up for our Newsletter </h2>
+					</div>
+					<div class="col-md-7 col-lg-8">
+						<input type="email" name="email" placeholder="Enter Email Address...">
+						<button class="btn btn-footer-submit text-white">SUBMIT</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copy-right py-3 text-center text-white">
+			<p class="mb-0">
+				<i class="fa fa-copyright mr-2"></i>2018 Instruction. All rights reserved | Design by<span>
+					SwinFood</span></p>
+		</div>
 	</footer>
+	<!-- END OF FOOTER  -->
 	<!-- FOOTER  -->
 	<script src="../Shared-food-ordering/scripts/nav.js"></script>
 	<script src="../Shared-food-ordering/scripts/order.js"></script>

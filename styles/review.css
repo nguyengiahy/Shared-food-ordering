@@ -1,92 +1,94 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500,600,700|Roboto');
 
-body{
-    background:#0062ad;
+body {
+    background: #0062ad;
     font-family: 'Roboto', sans-serif;
-    color:white;
+    color: white;
 }
 
-h1{
+/* h1 {
     margin: auto;
     width: 50%;
-    padding:10px;
+    padding: 10px;
     text-align: center;
 
-}
+} */
 
-p{
+/* p{
     margin:auto;
     width: 50%;
     padding: 10px;
     text-align: center;
-}
+} */
 
 /* Navigation bar */
-.Container{
+.Container {
     /* background-color:rgb(179, 98, 45); */
-    background-color:rgb(212, 86, 4);
-    display:flex;
+    background-color: rgb(212, 86, 4);
+    display: flex;
     flex-wrap: wrap;
-    padding:20px;
-    justify-content:center;
+    padding: 20px;
+    justify-content: center;
 }
 
-.nav_items a{
-    text-decoration:none;
-    margin:20px;
-    color:white;
-    
+.nav_items a {
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+
 }
 
-.nav_items a:hover{
-    background-color:rgb(224, 123, 57);
-    padding:10px;
-    transition-duration:0.5s;
+.nav_items a:hover {
+    background-color: rgb(224, 123, 57);
+    padding: 10px;
+    transition-duration: 0.5s;
 }
 
 /* Grid configuration will be subject to change */
-.column{
- /* Remember margins are from top, right, bottom and left */
- float:left;
- width: auto;
- padding: 100px;
- text-align: center;
- font-size:25px;
- cursor:pointer;
- color: white;
+.column {
+    /* Remember margins are from top, right, bottom and left */
+    float: left;
+    width: auto;
+    padding: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
 
 }
+
 /* Adding spacing between each box */
 /* #R1{
     margin-right: 40px;
 } */
 
 
-.column > img{
-    float:left;
-    width:25%;
+.column>img {
+    float: left;
+    width: 25%;
     padding: 5px;
-    
+
 }
-.containerTab{
+
+.containerTab {
     padding: 20px;
     color: white;
 
 }
 
-.expanding-grid:after{
-    
+.expanding-grid:after {
+
     content: "";
-    display:table;
+    display: table;
     clear: both;
 
 }
 
-.closebtn{
-    
-    float:right;
-    color:white;
-    font-size:35px;
-    cursor:pointer;
+.closebtn {
+
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 
 }

@@ -15,4 +15,5 @@ A web-based application for ordering food online. This web application provides 
 
 ## Language used
 Front-end: HTML, CSS, JavaScript
+
 Back-end: PHP, MySQL, JavaScript
